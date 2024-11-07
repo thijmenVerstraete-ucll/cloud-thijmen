@@ -6,7 +6,7 @@ metadata:
         cert-manager.io/cluster-issuer: letsencrypt-prod
 spec:
     rules:
-        - host: cloudops-10.ucll.cloud
+        - host: wp.cloudops-10.ucll.cloud
           http:
               paths:
                   - path: /
@@ -18,4 +18,5 @@ spec:
                                 number: 80
     tls:
         - hosts:
-              -
+              - wp.cloudops-10.ucll.cloud
+          secretName: wp-tls
