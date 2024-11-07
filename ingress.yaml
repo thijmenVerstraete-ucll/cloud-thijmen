@@ -16,7 +16,7 @@ spec:
                             name: wordpress
                             port:
                                 number: 80
-    tls:
-        - hosts:
-              - wp.cloudops-10.ucll.cloud
-          secretName: wp-tls
+    # tls:
+    #     - hosts:
+    #           - wp.cloudops-10.ucll.cloud
+    #       secretName: wp-tls
